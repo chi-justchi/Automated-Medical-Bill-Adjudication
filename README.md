@@ -1559,6 +1559,22 @@ aws cloudwatch put-metric-alarm \
 
 ---
 
+## References
+### YouTube videos:
+
+   - TraversyMedia. (2015, April 29). Learn HTML & CSS — full course [Video]. YouTube. https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d Scribbr+1
+   - TraversyMedia. (2015, May 1). Learn JavaScript — full course [Video]. YouTube. https://www.youtube.com/watch?v=iUIWG0h2D84&list=PL9nWRykSBSFjodfc8l8M8yN0ieP94QeEL NWTC LibAnswers+1
+   - TraversyMedia. (2015, June 11). Learn Node.js — full course [Video]. YouTube. https://www.youtube.com/watch?v=mhItmKsB5tQ&list=PLhr1KZpdzukfmv7jxvB0rL8SWoycA9TIM Notre Dame Library+1
+   - TraversyMedia. (2015, May 6). Learn React JS — full course [Video]. YouTube. https://www.youtube.com/watch?v=2k2GINpO308&list=PL9nWRykSBSFi5QD8ssI0W5odL9S0309E2 Himmelfarb Guides+1
+   - TraversyMedia. (2015, April 29). Learn HTML & CSS — full course [Video]. YouTube. https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d
+### Online-course:
+   - Maarek, S. (2025). Ultimate AWS Certified Solutions Architect Associate SAA-C03 [MOOC]. Udemy. https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/
+### AI-generated content tools:
+   - OpenAI. (2025). ChatGPT (Dec. 7 version) [Large language model]. https://chat.openai.com/ UNC Library Guides+1
+   - Google. (2025). Gemini 3.0 Pro [Large language model]. https://gemini.google.com/ 
+
+---
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
