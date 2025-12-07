@@ -16,7 +16,7 @@ botocore                       ^1.29.0      # Low-level AWS service interface
 
 ### Core Libraries
 ```
-python                         ^3.11        # Python runtime (required)
+python                         ^3.12        # Python runtime (required)
 json                           built-in     # JSON parsing
 os                             built-in     # Operating system interface
 io                             built-in     # Input/output operations
