@@ -453,7 +453,7 @@ aws s3 sync build/ s3://your-frontend-bucket/ --delete
 
 **Responsibilities**:
 
-- Validates that uploaded file is a PDF
+- Validates that the uploaded file is a PDF
 - Checks file size constraints
 - Verifies page count (max 3 pages)
 - Stores metadata (job_id) in S3 object metadata
@@ -1229,7 +1229,7 @@ aws xray get-trace-summaries --start-time $(date -u -d '1 hour ago' +%s)
 
 REGION="us-east-2"
 ROLE_ARN="arn:aws:iam::ACCOUNT_ID:role/lambda-execution-role"
-MODEL_ID="anthropic.claude-3-5-sonnet-20241022-v2:0"
+MODEL_ID="anthropic.claude-4-0-sonnet-20241022-v2:0"
 
 # Deploy Lambda 0
 zip -j lambda0.zip lambda0.py
