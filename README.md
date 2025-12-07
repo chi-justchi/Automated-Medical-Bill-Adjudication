@@ -209,7 +209,7 @@ MedicalBillAdjudicatin/
 - **AWS S3**: Blob storage for PDFs and results
 - **AWS DynamoDB**: NoSQL database for structured data
 - **AWS Bedrock**: Managed AI service (Claude 3.5 Sonnet)
-- **Python 3.11+**: Lambda runtime
+- **Python 3.12+**: Lambda runtime
 
 ### Frontend
 
@@ -239,7 +239,7 @@ MedicalBillAdjudicatin/
 
 ### Local Development
 
-- Python 3.11+
+- Python 3.12+
 - Node.js 18+ and npm
 - AWS CLI configured with credentials
 - Git
@@ -333,7 +333,7 @@ zip lambda_function.zip lambda_name.py
 # Create Lambda function
 aws lambda create-function \
   --function-name function-name \
-  --runtime python3.11 \
+  --runtime python3.12 \
   --role arn:aws:iam::ACCOUNT_ID:role/lambda-execution-role \
   --handler lambda_name.lambda_handler \
   --zip-file fileb://lambda_function.zip \
@@ -345,7 +345,7 @@ pip install -r requirements.txt -t .
 zip -r ../lambda3_function.zip .
 aws lambda create-function \
   --function-name lambda-3 \
-  --runtime python3.11 \
+  --runtime python3.12 \
   --role arn:aws:iam::ACCOUNT_ID:role/lambda-execution-role \
   --handler index.lambda_handler \
   --zip-file fileb://../lambda3_function.zip
@@ -1235,7 +1235,7 @@ MODEL_ID="anthropic.claude-4-0-sonnet-20241022-v2:0"
 zip -j lambda0.zip lambda0.py
 aws lambda create-function \
   --function-name medical-bill-intake \
-  --runtime python3.11 \
+  --runtime python3.12 \
   --role $ROLE_ARN \
   --handler lambda0.lambda_handler \
   --zip-file fileb://lambda0.zip \
@@ -1245,7 +1245,7 @@ aws lambda create-function \
 zip -j lambda1.zip lambda1.py
 aws lambda create-function \
   --function-name medical-bill-extraction \
-  --runtime python3.11 \
+  --runtime python3.12 \
   --role $ROLE_ARN \
   --handler lambda1.lambda_handler \
   --zip-file fileb://lambda1.zip \
@@ -1258,7 +1258,7 @@ aws lambda create-function \
 zip -j lambda2.zip lambda2.py
 aws lambda create-function \
   --function-name medical-bill-validation \
-  --runtime python3.11 \
+  --runtime python3.12 \
   --role $ROLE_ARN \
   --handler lambda2.lambda_handler \
   --zip-file fileb://lambda2.zip \
@@ -1271,7 +1271,7 @@ aws lambda create-function \
 zip -j lambda4.zip lambda4.py
 aws lambda create-function \
   --function-name medical-bill-results \
-  --runtime python3.11 \
+  --runtime python3.12 \
   --role $ROLE_ARN \
   --handler lambda4.lambda_handler \
   --zip-file fileb://lambda4.zip \
@@ -1353,7 +1353,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: medical-bill-intake
-      Runtime: python3.11
+      Runtime: python3.12
       Handler: lambda0.lambda_handler
       Code:
         S3Bucket: deployment-bucket
